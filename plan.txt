@@ -1,0 +1,22 @@
+MVP :
+
+Main Ideas :
+
+    -  The snake
+    -  Food
+    -  Score
+    -  Movement
+    -  Interact with food
+    -  Hitting the wall
+    -  The snake grows
+    -  The snake goes faster everytime it eats
+
+
+Starting :
+
+     - Set up the page
+     - Go back to portal & learn canvas in detail
+     - Drawing the snake
+
+    
+     

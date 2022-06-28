@@ -1,0 +1,19 @@
+body {
+    background-color: grey ; 
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Snake {
+    background-color: darkslategray;
+    border: 2px solid;
+
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
