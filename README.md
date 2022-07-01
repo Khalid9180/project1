@@ -1,4 +1,4 @@
-# Project1 ( The Snake ) : 
+# Project1 (Snake Game) : 
 ![hero](https://user-images.githubusercontent.com/106959352/176841672-2ee19b28-1577-4397-a7e2-a4b0032b1292.png)
 
 Description :
