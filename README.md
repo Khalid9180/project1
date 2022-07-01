@@ -15,7 +15,7 @@ Future work:
 
 I hope i can be able to add some audio for everytime the snake eats the food. 
 
-Challenge:
+Upcoming Challenges:
 
 the most difficult challenge to be able to increase the snake length without any issues.
 
