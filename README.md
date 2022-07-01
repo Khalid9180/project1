@@ -4,7 +4,7 @@
 Description :
 
 I was able to create a simple snake game with only one square as the
-the length of the snake, also i added a score and gameover screen.
+the length of the snake, also i added a score and a gameover screen.
 
 How to paly ?
 
