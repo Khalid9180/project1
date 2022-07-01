@@ -15,6 +15,7 @@ let foodHeight = 25;
 let myScore = 0;
 let intervalId ;
 let timeoutId ;
+let refreshRate = 150; 
 timeoutId =  setInterval(updateCanvas, 1000 / speed)
 
 function collision(){
@@ -23,6 +24,9 @@ function collision(){
         foodx = Math.floor(Math.random()*24)*25
         foody = Math.floor(Math.random()*24)*25
         myScore++
+        if ( myScore % 2 === 0 && refreshRate >= 60 ) {
+            refreshRate -= 20
+        }
     }     
 }
 
@@ -63,7 +67,7 @@ function drawSnake(){
 function score(){
     ctx.fillStyle = "white"
     ctx.font = "20px Verdana"
-    ctx.fillText(`Score:${myScore}`,605, 20)
+    ctx.fillText(`Score:${myScore}`,605, 20) 
 }
 
 
@@ -76,28 +80,27 @@ function updateCanvas(){
     score()  
 }
 
-
 document.addEventListener('keydown', e => {     
     switch (e.key) {
         case "ArrowUp":
             clearInterval(intervalId)
             intervalId = setInterval ( ()=> { positiony +=1;
-            }, 150 )
+            }, refreshRate)
             break;
         case "ArrowDown":
             clearInterval(intervalId)
             intervalId = setInterval ( ()=> {  positiony -=1;
-            }, 150 )
+            }, refreshRate)
             break;
         case "ArrowRight":
             clearInterval(intervalId)
             intervalId = setInterval ( ()=> { positionx -=1;
-            }, 150 )
+            }, refreshRate)
             break;
         case "ArrowLeft":
             clearInterval(intervalId)
             intervalId = setInterval ( ()=> { positionx +=1;
-            }, 150 )
+            }, refreshRate )
             break;
     }
     updateCanvas();
